@@ -1,13 +1,11 @@
-# Decky Plugin Backup
+# Decky Discord Web
 
-Dieses Plugin ermöglicht es, Decky-Plugins und deren Einstellungen zu sichern und wiederherzustellen.  
-Es ist besonders nützlich, wenn du dein Steam Deck neu aufsetzt oder deine Plugins zwischen Geräten übertragen möchtest.
+Dieses Plugin fügt die Discord Webversion als "Spiel" hinzu, sodass du Discord direkt über den Decky Loader starten kannst.
 
 ## ✨ Features
-- Backup aller installierten Decky-Plugins und deren Konfigurationen
-- Wiederherstellung aus einer YAML-Datei
-- Frei wählbarer Speicherort für die Backup-Datei
-- Integration in den Decky Loader (Frontend + Backend)
+- Startet die Discord Webversion im Standardbrowser
+- Optional kann ein Steam-Shortcut erstellt werden, damit Discord in der Bibliothek als Spiel erscheint
+- Einfache Bedienung über einen Button im Decky Loader
 
 ## 🚀 Installation
 1. Stelle sicher, dass der **Decky Loader** installiert ist.
@@ -15,6 +13,14 @@ Es ist besonders nützlich, wenn du dein Steam Deck neu aufsetzt oder deine Plug
 3. Das Plugin erscheint im Decky Loader Menü.
 
 ## 🔧 Nutzung
-- Backup erstellen:
-  ```bash
-  python3 backend/update_backup_restore.py backup --all --path /pfad/zur/datei.yaml
+- Öffne den Decky Loader.
+- Gehe ins Menü **Discord Web**.
+- Klicke auf **Discord starten** → die Webversion öffnet sich im Browser.
+
+## 🛠 Entwicklung
+- Backend: `backend/main.py` (öffnet Discord Web über `xdg-open`)
+- Frontend: `frontend/index.tsx` (UI mit Button)
+- Metadaten: `plugin.json`
+
+## 📦 Contributing
+Pull Requests sind willkommen! Bitte nutze die offiziellen Templates der [decky-plugin-database](https://github.com/SteamDeckHomebrew/decky-plugin-database).
