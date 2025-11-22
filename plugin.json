@@ -1,0 +1,8 @@
+{
+  "name": "Discord Web",
+  "author": "FlorianThrPro17",
+  "description": "Fügt die Discord Webversion als Non-Steam-Spiel hinzu.",
+  "version": "1.0.0",
+  "main": "backend/main.py",
+  "frontend": "frontend/index.tsx"
+}
