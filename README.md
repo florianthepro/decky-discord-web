@@ -1,0 +1,1 @@
+# decky-discord-web
