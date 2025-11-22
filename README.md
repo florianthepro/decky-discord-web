@@ -21,6 +21,3 @@ Dieses Plugin fügt die Discord Webversion als "Spiel" hinzu, sodass du Discord 
 - Backend: `backend/main.py` (öffnet Discord Web über `xdg-open`)
 - Frontend: `frontend/index.tsx` (UI mit Button)
 - Metadaten: `plugin.json`
-
-## 📦 Contributing
-Pull Requests sind willkommen! Bitte nutze die offiziellen Templates der [decky-plugin-database](https://github.com/SteamDeckHomebrew/decky-plugin-database).
